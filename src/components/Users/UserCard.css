@@ -1,0 +1,43 @@
+.user-card-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18rem;
+  background-color: var(--card-bg-color);
+  box-shadow: 2px 2px 2px 2px var(--clr-gray700);
+  border-radius: 4px;
+  transition: transform 200ms ease-in;
+  z-index: 2;
+}
+
+.user-card-body {
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.user-name {
+  font-size: 1.25rem;
+}
+
+.user-card-btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-primary);
+  border-radius: 2px;
+}
+
+.user-card-btn:hover {
+  background: var(--clr-primary-dark);
+  color: var(--primary-text-color);
+  cursor: pointer;
+  scale: 1.02;
+}

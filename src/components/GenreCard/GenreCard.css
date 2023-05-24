@@ -1,0 +1,42 @@
+.genre-card-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18rem;
+  background-color: var(--card-bg-color);
+  box-shadow: 2px 2px 2px 2px var(--clr-gray700);
+  border-radius: 4px;
+  transition: transform 200ms ease-in;
+}
+
+.genre-card-body {
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.genre-name {
+  font-size: 1.25rem;
+}
+
+.genre-card-btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-primary);
+  border-radius: 2px;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.genre-card-btn:hover {
+  background: var(--clr-primary);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}

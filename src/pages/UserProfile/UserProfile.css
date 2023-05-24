@@ -1,0 +1,40 @@
+.userprofile-container h1,
+.genres h2,
+.genres ul,
+.movies h2,
+.movies ul,
+.userprofile-container p {
+  color: var(--primary-text-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userprofile h1 {
+  padding: 1rem;
+}
+
+.genres ul,
+.movies ul {
+  /* list-style-type: none; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+}
+
+.genre-label,
+.movie-label {
+  color: white;
+}
+
+.genre-form,
+.movie-form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
