@@ -19,7 +19,7 @@ const UserProfile = () => {
     if (user) {
       const fetchLikedGenres = async () => {
         try {
-          const response = await axios.get(`https://localhost:7083/api/Genre/${user.name}`);
+          const response = await axios.get(`https://localhost:7083/api/Genre/get/${user.name}`);
           setLikedGenres(response.data);
           console.log(response.data)
         } catch (error) {
@@ -35,7 +35,7 @@ const UserProfile = () => {
     if (user) {
       const fetchLinkedMovies = async () => {
         try {
-          const response = await axios.get(`https://localhost:7083/api/Movie/${user.name}`);
+          const response = await axios.get(`https://localhost:7083/api/Movie/get/${user.name}`);
           setLinkedMovies(response.data);
           console.log(response.data)
         } catch (error) {
@@ -69,7 +69,7 @@ const UserProfile = () => {
       genreName: newGenre.genreName
     };
     
-    const response = await axios.post('https://localhost:7083/api/PersonGenre', genreData);
+    const response = await axios.post('https://localhost:7083/api/PersonGenre/post', genreData);
     console.log(response.data);
     // Reset the form after successful submission
     setNewGenre({
@@ -94,7 +94,7 @@ const handleMovieChange = (event) => {
   const handleMovieSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://localhost:7083/api/Movie', newMovie);
+      const response = await axios.post('https://localhost:7083/api/Movie/post', newMovie);
       console.log(response.data);
       // Reset the form after successful submission
       setNewMovie({
